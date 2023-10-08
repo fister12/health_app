@@ -1,0 +1,15 @@
+.landing {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .landing h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .landing p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
