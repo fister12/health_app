@@ -19,8 +19,6 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add more global styles as needed */
-
 /* Style for the circular profile picture in AccountBar */
 .account-bar .profile-picture {
   width: 40px;
@@ -29,6 +27,7 @@ body {
   border-radius: 50%;
   cursor: pointer;
   margin: 20px auto;
+  /* You can add styles to center the circle vertically */
 }
 
 /* Style for the account options in AccountBar */
@@ -41,3 +40,5 @@ body {
   cursor: pointer;
   /* Add styling for your account options (links/icons) */
 }
+
+/* Add more global styles as needed */

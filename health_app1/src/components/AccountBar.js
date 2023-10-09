@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './AccountBar.css';
+import { Button, Segment } from 'semantic-ui-react';
 
 function AccountBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,17 +9,15 @@ function AccountBar() {
   };
 
   return (
-    <div className={`account-bar ${isOpen ? 'open' : ''}`}>
-      <div className="profile-picture" onClick={toggleBar}>
+    <Segment>
+      <div className={`profile-picture ${isOpen ? 'open' : ''}`} onClick={toggleBar}>
         {/* Your profile picture here */}
       </div>
       <div className="options">
-        {/* Add links and icons for account options */}
         <div className="option">Account</div>
         <div className="option">Settings</div>
-        {/* Add more options as needed */}
       </div>
-    </div>
+    </Segment>
   );
 }
 

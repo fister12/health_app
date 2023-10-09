@@ -1,25 +1,27 @@
 import React from 'react';
-import './App.css';
+import 'semantic-ui-css/semantic.min.css'; // Import Semantic UI CSS
+import { Container } from 'semantic-ui-react'; // Import Semantic UI React components
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 import ActionButton1 from './components/ActionButton1';
 import AccountBar from './components/AccountBar'; // Import the AccountBar component
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import "./App.css"
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <Container fluid>
         <Header />
-        <AccountBar /> {/* Add the AccountBar component */}
+        <AccountBar />
         <Routes>
           <Route path="/courses" element={<Courses />} />
           <Route path="/kits" element={<Kits />} />
           <Route path="/" element={<Home />} />
         </Routes>
         <Footer />
-      </div>
+      </Container>
     </Router>
   );
 }

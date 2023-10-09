@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ActionButton1.css';
+import { Button, Segment } from 'semantic-ui-react';
 
 function ActionButton1() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,25 +13,16 @@ function ActionButton1() {
   };
 
   return (
-    <div className="action-button">
-      <button onClick={openPane}>Select Kit/Course</button>
+    <Segment>
+      <Button primary onClick={openPane}>Select Kit/Course</Button>
       {isOpen && (
-        <div className="selection-pane">
-          <p>
-            Course 1: <a href="#">Link to Course 1</a>
-          </p>
-          <p>
-            Course 2: <a href="#">Link to Course 2</a>
-          </p>
-          <p>
-            Course 3: <a href="#">Link to Course 3</a>
-          </p>
-          <button onClick={closePane}>Close</button>
-        </div>
+        <Segment>
+          <p>Course 1: <a href="#">Link to Course 1</a></p>
+          <Button onClick={closePane}>Close</Button>
+        </Segment>
       )}
-    </div>
+    </Segment>
   );
 }
 
 export default ActionButton1;
-
