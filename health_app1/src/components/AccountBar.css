@@ -1,0 +1,36 @@
+.account-bar {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #fff;
+    width: 0;
+    height: 100%;
+    overflow-x: hidden;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .account-bar.open {
+    width: 200px; /* Adjust the width as needed */
+  }
+  
+  .profile-picture {
+    width: 40px; /* Customize the size of your profile picture */
+    height: 40px;
+    background-color: #007bff; /* Example background color */
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 20px auto;
+    /* You can add styles to center the circle vertically */
+  }
+  
+  .options {
+    padding: 20px;
+  }
+  
+  .option {
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* Add styling for your account options (links/icons) */
+  }
+  

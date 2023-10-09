@@ -17,7 +17,15 @@ function ActionButton1() {
       <button onClick={openPane}>Select Kit/Course</button>
       {isOpen && (
         <div className="selection-pane">
-          {/* Add kit and course selection options here */}
+          <p>
+            Course 1: <a href="#">Link to Course 1</a>
+          </p>
+          <p>
+            Course 2: <a href="#">Link to Course 2</a>
+          </p>
+          <p>
+            Course 3: <a href="#">Link to Course 3</a>
+          </p>
           <button onClick={closePane}>Close</button>
         </div>
       )}
@@ -26,3 +34,4 @@ function ActionButton1() {
 }
 
 export default ActionButton1;
+

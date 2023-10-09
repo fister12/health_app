@@ -20,3 +20,24 @@ body {
 }
 
 /* Add more global styles as needed */
+
+/* Style for the circular profile picture in AccountBar */
+.account-bar .profile-picture {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+/* Style for the account options in AccountBar */
+.account-bar .options {
+  padding: 20px;
+}
+
+.account-bar .option {
+  margin-bottom: 10px;
+  cursor: pointer;
+  /* Add styling for your account options (links/icons) */
+}
